@@ -15,11 +15,11 @@
 ## Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="img/log_list.png" alt="Log List" width="45%" />
-  <img src="img/json_general.png" alt="JSON General View" width="45%" />
-  <img src="img/json_response.png" alt="JSON Response Details" width="45%" />
-  <img src="img/protobuf_request.png" alt="ProtoBuf Request" width="45%" />
-  <img src="img/protobuf_response.png" alt="ProtoBuf Response" width="45%" />
+  <img src="img/log_list.png" alt="Log List" width="25%" />
+  <img src="img/json_general.png" alt="JSON General View" width="25%" />
+  <img src="img/json_response.png" alt="JSON Response Details" width="25%" />
+  <img src="img/protobuf_request.png" alt="ProtoBuf Request" width="25%" />
+  <img src="img/protobuf_response.png" alt="ProtoBuf Response" width="25%" />
 </div>
 
 ## Getting Started
