@@ -92,7 +92,7 @@ install(Sniffer) {
 ## Supported Platforms
 
 - Android (Room database, Compose UI)
-- iOS (expect/actual for database, Compose UI)
+- iOS (Room database, Compose UI)
 
 ## Example
 
