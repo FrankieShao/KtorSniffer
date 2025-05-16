@@ -5,8 +5,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import org.jetbrains.compose.ui.tooling.preview.Preview
 import io.github.frankieshao.ktorsniffer.ui.KtorSnifferScreen
+import org.jetbrains.compose.ui.tooling.preview.Preview
 import io.ktor.client.engine.HttpClientEngineFactory
 
 /**

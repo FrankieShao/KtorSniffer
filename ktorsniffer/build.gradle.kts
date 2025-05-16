@@ -13,7 +13,7 @@ plugins {
 }
 
 mavenPublishing {
-    coordinates("io.github.frankieshao", "ktorsniffer", "0.1.0")
+    coordinates("io.github.frankieshao", "ktorsniffer", "0.1.1")
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
 }

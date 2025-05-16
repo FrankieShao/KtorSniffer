@@ -1,5 +1,7 @@
 # KtorSniffer
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.frankieshao/ktorsniffer)](https://search.maven.org/artifact/io.github.frankieshao/ktorsniffer)
+
 **KtorSniffer** is a Kotlin Multiplatform library for logging, inspecting, and persisting HTTP network traffic in Ktor client applications. It is designed to help developers debug, analyze, and visualize network requests and responses across Android, iOS.
 
 ## Features
@@ -10,6 +12,16 @@
 - **ProtoBuf Support**: Handles ProtoBuf request/response bodies in addition to JSON and plain text.
 - **Customizable**: Easily configure how to format ProtoBuf bodies.
 
+## Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="img/log_list.png" alt="Log List" width="45%" />
+  <img src="img/json_general.png" alt="JSON General View" width="45%" />
+  <img src="img/json_response.png" alt="JSON Response Details" width="45%" />
+  <img src="img/protobuf_request.png" alt="ProtoBuf Request" width="45%" />
+  <img src="img/protobuf_response.png" alt="ProtoBuf Response" width="45%" />
+</div>
+
 ## Getting Started
 
 ### 1. Add KtorSniffer to Your Project
@@ -19,7 +31,7 @@
 Add the dependency to your shared module:
 
 ```kotlin
-implementation("io.github.frankieshao:ktorsniffer:<latest-version>")
+implementation("io.github.frankieshao:ktorsniffer:0.1.1")
 ```
 
 ### 2. Install the Plugin in Your Ktor Client
