@@ -44,7 +44,6 @@ internal object SendMonitorHook :
 
     class Context(private val context: PipelineContext<Any, HttpRequestBuilder>) {
         suspend fun proceedWith(content: Any) = context.proceedWith(content)
-        suspend fun proceed() = context.proceed()
     }
 
     override fun install(

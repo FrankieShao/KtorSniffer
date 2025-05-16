@@ -279,7 +279,7 @@ fun DetailError(
 }
 
 @Composable
-fun ColumnScope.DetailBody(
+fun DetailBody(
     modifier: Modifier = Modifier,
     bodyType: ContentType?,
     body: String?
