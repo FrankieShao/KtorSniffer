@@ -1,0 +1,111 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "fe8a9502ff193963d30e6bf97580b047",
+    "entities": [
+      {
+        "tableName": "NetworkLog",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `requestUrl` TEXT NOT NULL, `requestMethod` TEXT NOT NULL, `requestHeaders` TEXT NOT NULL, `requestBodyType` TEXT NOT NULL, `requestBodyLength` INTEGER NOT NULL, `requestBody` TEXT, `requestTimestamp` INTEGER, `responseTimestamp` INTEGER, `responseStatusCode` INTEGER, `responseHeaders` TEXT, `responseBodyType` TEXT, `responseBodyLength` INTEGER, `responseBody` TEXT, `protocol` TEXT, `errorDetails` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestUrl",
+            "columnName": "requestUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestMethod",
+            "columnName": "requestMethod",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestHeaders",
+            "columnName": "requestHeaders",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestBodyType",
+            "columnName": "requestBodyType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestBodyLength",
+            "columnName": "requestBodyLength",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestBody",
+            "columnName": "requestBody",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "requestTimestamp",
+            "columnName": "requestTimestamp",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "responseTimestamp",
+            "columnName": "responseTimestamp",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "responseStatusCode",
+            "columnName": "responseStatusCode",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "responseHeaders",
+            "columnName": "responseHeaders",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "responseBodyType",
+            "columnName": "responseBodyType",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "responseBodyLength",
+            "columnName": "responseBodyLength",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "responseBody",
+            "columnName": "responseBody",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "protocol",
+            "columnName": "protocol",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "errorDetails",
+            "columnName": "errorDetails",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fe8a9502ff193963d30e6bf97580b047')"
+    ]
+  }
+}
